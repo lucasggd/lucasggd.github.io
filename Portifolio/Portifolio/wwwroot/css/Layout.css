@@ -1,0 +1,14 @@
+﻿html, body {
+    height:auto;
+    width:100%;
+    margin:0;
+}
+.logo{
+    width:100px;
+    height:auto;
+    position:absolute;
+    transform:translate(0, -30%);
+}
+.flex-fill{
+    flex:1;
+}
