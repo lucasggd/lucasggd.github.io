@@ -1,0 +1,133 @@
+html, body {
+    width:100%;
+    height:auto;
+}
+.centroVertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meuNome {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.divNome {
+    width: 100%;
+    height: 97vh;
+    background-image: url('./images/background.jpg');
+    border-bottom-right-radius: 30%;
+    object-fit: cover;
+}
+.Nome {
+    border: 3px solid white;
+    background-color:rgba(0, 0, 0, 0.60);
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.icone{
+    height:100px;
+    width:auto;
+}
+.imagemLucas {
+    height:250px;
+    width:auto;
+    border-radius: 50%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position:relative;
+}
+.bordaDivFoto {
+    border-right: 1px solid #000;
+}
+.tituloLinguagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+div p, h3 {
+    text-align: center;
+}
+p{
+    font-size:16px;
+}
+.hr3 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+}
+.tituloObjetivos {
+    text-align: center;
+    border-bottom: 5px solid #ff6a00;
+    border-top: 5px solid #ff6a00;
+}
+.imagemCentro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.iconInfo{
+    height:100px;
+    width:auto;
+}
+@media screen and (max-width: 1280px) {
+    .iconInfo {
+        height: 75px;
+        width: auto;
+    }
+    .imagemLucas {
+        height: 200px;
+        width: auto;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+    }
+    .icone {
+        height: 100px;
+        width: auto;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .iconInfo {
+        height: 50px;
+        width: auto;
+        margin-bottom:15px;
+    }
+    .imagemLucas {
+        height: 150px;
+        width: auto;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+    }
+    .icone {
+        height: 100px;
+        width: auto;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .icone {
+        height: 100px;
+        width: auto;
+        margin-top:15px;
+    }
+    .imagemLucas {
+        height: 200px;
+        margin-top:25px;
+        width: auto;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+    }
+}
