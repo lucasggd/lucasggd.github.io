@@ -2,6 +2,16 @@ html, body {
     width:100%;
     height:auto;
 }
+.navHome{
+    font-family: 'Bree Serif', serif;
+    font-size:26px;
+    color: #fff!important;
+    transition: background-color 1s, color 1s;
+}
+.navHome:hover{
+    background-color: #fff;
+    color: #000!important;
+}
 .centroVertical {
     display: flex;
     align-items: center;
@@ -28,6 +38,13 @@ html, body {
 .icone{
     height:100px;
     width:auto;
+    transition: height 1s, margin-bottom 1s;
+}
+.icone:hover{
+    height:125px;
+    width:auto;
+    margin-bottom: -25px;
+    position: relative;
 }
 .imagemLucas {
     height:250px;
@@ -70,6 +87,12 @@ p{
 }
 .iconInfo{
     height:100px;
+    width:auto;
+    transition: height 1s, margin-bottom 1s;
+}
+.iconInfo:hover{
+    height:125px;
+    margin-bottom: -25px;
     width:auto;
 }
 @media screen and (max-width: 1280px) {
