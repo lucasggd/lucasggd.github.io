@@ -6,11 +6,11 @@ html, body {
     font-family: 'Bree Serif', serif;
     font-size:26px;
     color: #fff!important;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
 }
 .navHome:hover{
     background-color: #fff;
-    color: #000!important;
+    color: #1E90FF!important;
 }
 .centroVertical {
     display: flex;
@@ -38,7 +38,7 @@ html, body {
 .icone{
     height:100px;
     width:auto;
-    transition: height 1s, margin-bottom 1s;
+    transition: height 0.5s, margin-bottom 0.5s;
 }
 .icone:hover{
     height:125px;
@@ -62,7 +62,9 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+}
+.tituloLinguagens h2{
+    margin-bottom: 0!important;
 }
 div p, h3 {
     text-align: center;
@@ -86,13 +88,8 @@ p{
     margin-right: auto
 }
 .iconInfo{
-    height:100px;
-    width:auto;
-    transition: height 1s, margin-bottom 1s;
-}
-.iconInfo:hover{
-    height:125px;
-    margin-bottom: -25px;
+    margin: 0 5px;
+    height:70px;
     width:auto;
 }
 @media screen and (max-width: 1280px) {
