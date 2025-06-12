@@ -1,160 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link href="./layout.css" rel="stylesheet" />
-    <link href="./index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Lucas Dias</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand navbar-toggleable" style="background-color:#1E90FF;height: 70px;">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png" class="logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="container justify-content-center">
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div>
-        <main role="main" class="pb-3">
-<!--BackGround inicial com nome-->
-<div class="text-center divNome">
-    <h1 class="display-4 meuNome Nome" style="font-family: 'Kaushan Script', cursive;">Lucas Dias</h1>
-</div>
+    <!-- Welcome section -->
+    <section id="main-section" class="w-full h-screen bg-black flex justify-evenly items-center text-white">
 
-<!--DIV Linguagens e frameworks-->
-<div style="margin-top:100px; margin-bottom:200px;"class="container">
-    <div class="tituloLinguagens" style="margin-bottom:100px;">
-        <img src="./Icones/favorito.png" style="height: 50px;" />
-        <h2 style="margin-left:10px;">Desenvolvedor Full Stack</h2>
-    </div>
-    <!--Icones das ljnguagens e Frameworks-->
-    <div class="row">
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/html.png"/>
+        <div>
+            <h1 id="init-title" class="text-6xl font-semibold">
+                Sou
+                <span class="text-orange-600">Lucas Dias</span>
+                ,
+                </br>
+                um
+                <span class="text-orange-600">desenvolvedor Full-Stack</span>.
+            </h1>
+            <p id="init-desc" class="text-2xl">Crio experiências digitais rápidas, acessíveis e escaláveis.</p>
         </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/css.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/javascript.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/angular.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/java.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/sql.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/typescript.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/spring.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/net.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/python.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/docker.png" />
-        </div>
-        <div class="col-6 col-md-4 col-lg-2" style="margin-top:10px">
-            <img class="icone imagemCentro" src="./images/linux.png" />
-        </div>
-    </div>
-</div>
 
-<!--DIV Informações-->
-<div class="row" style="background-color:#ededed;min-height:500px; height:auto; width:100%;margin:0!important;">
-    <div class="col-md-3 col-lg-4">
-        <img class="imagemLucas" src="./images/Lucas.jpg" alt="Lucas Dias" />
-    </div>
-    <div class="col-12 col-md-9 col-lg-8 row" style="margin-top:100px;margin-left:0px;">
-        <div class="col-12 col-md-6 col-lg-4">
-            <h3 style="font-family: 'Bebas Neue', cursive;">Formação</h3>
-            <p>Análise e Desenvolvimento de Sistemas - Etec Comendador João Rays - 2019</p>
-            <hr class="hr3" />
-            <p>Ciência da Computação - Unisagrado - Bauru SP 2022 - 2025</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <H3 style="font-family: 'Bebas Neue', cursive;">Experiências</H3>
-            <hr class="hr3" />
-            <p>Desenvolvedor Full Stack - Zion Logtec - 2021 - Até o momento | Angular e Java </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <h3 style="font-family: 'Bebas Neue', cursive;">Contato</h3>
-            <hr class="hr3" />
-            <p>E-mail: ld.ggd@outlook.com</p>
-            <hr class="hr3" />
-            <p>Celular: (14) 99731-8619</p>
-            <hr class="hr3" />
-            <div class="centroVertical">
-                <a href="https://github.com/lucasggd">
-                    <img src="./Icones/github.png" class="iconInfo" style="float:left" />
-                </a>
-                <a href="https://www.linkedin.com/in/lucas-gabriel-dias-42007a1a3/">
-                    <img src="./Icones/linkedin.png" class="iconInfo" />
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Objetivos Div-->
-<div style="margin-top:100px;margin-bottom:200px;">
-    <div class="centroVertical">
-        <h1 class="tituloObjetivos">Objetivos</h1>
-    </div>
-    <div class="container">
-        <h3 style="margin-top:50px;">1 - Evoluir como Profissional e Pessoal</h3>
-        <hr class="hr3" />
-        <p>Chegar ao nível sênior como desenvolvedor juntamente a pós-graduação de doutorado.</p>
-    </div>
-    <div class="container">
-        <h3 style="margin-top:50px;">2 - Novas experiências</h3>
-        <hr class="hr3" />
-        <p>Evitando ao máximo ficar na zona de conforto, busco sempre que possível me desafiar para ter novas experiências positivas e aprendendo com as negativas.</p>
-    </div>
-    <div class="container">
-        <h3 style="margin-top:50px;">3 - Trabalhar em grandes projetos</h3>
-        <hr class="hr3" />
-        <p>Evoluindo a cada dia com os erros e acertos, desejo também evoluir o tamanho dos projetos que vou trabalhando, cada vez mais desafiadores e gratificantes.</p>    
-    </div>
-</div>
-<!--Fim-->
-<div class="centroVertical" style="margin-top:50px;margin-bottom:150px;">
-    <h2 style="text-align:center;">Obrigado !</h2>
-    <img style="height:60px;width:auto;margin-left:15px;" src="./Icones/respeito.png" />
-</div>
-<link href="./css/index.css" rel="stylesheet" />
+        <div class="flex justify-start">
 
-        </main>
-    </div>
+            <img id="init-me-picture" class="w-[300px] h-auto rounded-full" src="./images/me.jpeg"
+                alt="Foto do desenvolvedor">
 
-    <footer class="border-top footer text-muted" style="background-color:#1E90FF; margin:0; padding-top: 25px; display: flex;min-height: 5vh;">
-        <div class="container" style="color:white;justify-content: center;">
-            <p style="text-align: center;">© 2022 - Lucas Dias</p>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </section>
+
+    <!-- Tecnologies section -->
+    <section id="tooling-section" class="w-full h-screen bg-black text-white">
+        <div class="pt-20 flex justify-center">
+            <h2 id="tooling-title" class="text-3xl font-semibold text-white py-2 px-3 rounded-md font-mono">
+                FERRAMENTAS
+            </h2>
+        </div>
+        <div class="mt-30 flex items-center justify-center">
+            <ul id="tooling-items-list" class="w-1/2 py-10 flex flex-wrap items-center justify-evenly">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section>
+
+    </section>
+
+    <!-- Projects section -->
+    <section>
+
+    </section>
+
+    <!-- Social links section -->
+    <section>
+
+    </section>
+
+    <script src="./index.ts"></script>
 </body>
+
 </html>
