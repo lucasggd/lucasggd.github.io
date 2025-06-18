@@ -1,109 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio - Lucas Dias</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Welcome section -->
-    <section id="main-section" class="w-full h-screen bg-black flex justify-evenly items-center text-white">
+    <section
+      id="main-section"
+      class="w-full h-screen bg-black flex justify-evenly items-center text-white"
+    >
+      <div>
+        <h1 id="init-title" class="text-6xl font-semibold">
+          Sou
+          <span class="text-orange-600">Lucas Dias</span>
+          ,
+          <br />
+          um
+          <span class="text-orange-600">desenvolvedor Full-Stack</span>.
+        </h1>
+        <p id="init-desc" class="text-2xl">
+          Crio experiências digitais rápidas, acessíveis e escaláveis.
+        </p>
+      </div>
 
-        <div>
-            <h1 id="init-title" class="text-6xl font-semibold">
-                Sou
-                <span class="text-orange-600">Lucas Dias</span>
-                ,
-                </br>
-                um
-                <span class="text-orange-600">desenvolvedor Full-Stack</span>.
-            </h1>
-            <p id="init-desc" class="text-2xl">Crio experiências digitais rápidas, acessíveis e escaláveis.</p>
-        </div>
-
-        <div class="flex justify-start">
-
-            <img id="init-me-picture" class="w-[300px] h-auto rounded-full" src="./images/me.jpeg"
-                alt="Foto do desenvolvedor">
-
-        </div>
-
+      <div class="flex justify-start">
+        <img
+          id="init-me-picture"
+          class="w-[300px] h-auto rounded-full"
+          src="./images/me.jpeg"
+          alt="Foto do desenvolvedor"
+        />
+      </div>
     </section>
 
     <!-- Tecnologies section -->
     <section id="tooling-section" class="w-full h-screen bg-black text-white">
-        <div class="pt-20 flex justify-center">
-            <h2 id="tooling-title" class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono">
-                FERRAMENTAS
-            </h2>
-        </div>
-        <div id="tooling-items-div" class="mt-30 flex items-center justify-center">
-            <ul id="tooling-items-list" class="w-6/10 py-10 flex flex-wrap items-center justify-evenly rounded-lg">
-                <li>
-                    <img src="./images/angular.png" alt="angular-icon">
-                    <h3>Angular</h3>
-                </li>
-                <li>
-                    <img src="./images/typescript.png" alt="typescript-icon">
-                    <h3>TypeScript</h3>
-                </li>
-                <li>
-                    <img src="./images/javascript.png" alt="javascript-icon">
-                    <h3>JavaScript</h3>
-                </li>
-                <li>
-                    <img src="./images/java.png" alt="java-icon">
-                    <h3>Java</h3>
-                </li>
-                <li>
-                    <img src="./images/tailwind.png" alt="tailwindcss-icon">
-                    <h3>TailwindCSS</h3>
-                </li>
-                <li>
-                    <img src="./images/springboot.png" alt="springboot-icon">
-                    <h3>Spring boot</h3>
-                </li>
-                <li>
-                    <img src="./images/rabbitmq.png" alt="rabbitmq-icon">
-                    <h3>RabbitMQ</h3>
-                </li>
-                <li>
-                    <img src="./images/docker.png" alt="docker-icon">
-                    <h3>Docker</h3>
-                </li>
-                <li>
-                    <img src="./images/postgresql.png" alt="postgresql-icon">
-                    <h3>PostgreSQL</h3>
-                </li>
-                <li>
-                    <img src="./images/oracle.png" alt="oracle-icon">
-                    <h3>OracleDB</h3>
-                </li>
-            </ul>
-        </div>
+      <div class="pt-20 flex justify-center">
+        <h2
+          id="tooling-title"
+          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+        >
+          FERRAMENTAS
+        </h2>
+      </div>
+      <div
+        id="tooling-items-div"
+        class="mt-30 flex items-center justify-center"
+      >
+        <ul
+          id="tooling-items-list"
+          class="w-6/10 py-10 flex flex-wrap items-center justify-evenly rounded-xl"
+        >
+          <li>
+            <img src="./images/angular.png" alt="angular-icon" />
+            <h3>Angular</h3>
+          </li>
+          <li>
+            <img src="./images/typescript.png" alt="typescript-icon" />
+            <h3>TypeScript</h3>
+          </li>
+          <li>
+            <img src="./images/javascript.png" alt="javascript-icon" />
+            <h3>JavaScript</h3>
+          </li>
+          <li>
+            <img src="./images/java.png" alt="java-icon" />
+            <h3>Java</h3>
+          </li>
+          <li>
+            <img src="./images/tailwind.png" alt="tailwindcss-icon" />
+            <h3>TailwindCSS</h3>
+          </li>
+          <li>
+            <img src="./images/springboot.png" alt="springboot-icon" />
+            <h3>Spring boot</h3>
+          </li>
+          <li>
+            <img src="./images/rabbitmq.png" alt="rabbitmq-icon" />
+            <h3>RabbitMQ</h3>
+          </li>
+          <li>
+            <img src="./images/docker.png" alt="docker-icon" />
+            <h3>Docker</h3>
+          </li>
+          <li>
+            <img src="./images/postgresql.png" alt="postgresql-icon" />
+            <h3>PostgreSQL</h3>
+          </li>
+          <li>
+            <img src="./images/oracle.png" alt="oracle-icon" />
+            <h3>OracleDB</h3>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Experience section -->
-    <section>
+    <section id="exp-section" class="w-full h-screen bg-black text-white">
+      <div class="flex justify-center">
+        <h2
+          id="exp-title"
+          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+        >
+          EXPERIÊNCIA
+        </h2>
+      </div>
+      <div class="mt-35 w-full h-96 flex items-center justify-center">
+        <div id="exp-main-div" class="w-6/10 h-80 flex rounded-xl">
+          <ul
+            id="exp-companies-div"
+            class="w-2/10 h-full border-r-2 border-purple-950 text-2xl font-semibold text-white py-4 rounded-l-xl"
+          >
+            <li class="py-3 selected">Zion Logtec</li>
+          </ul>
 
+          <div
+            id="exp-description-div"
+            class="w-8/10 h-full flex flex-col px-10 text-white"
+          >
+            <div class="w-full py-6 flex justify-between">
+              <h3 class="text-3xl font-semibold">Desenvolvedor Web/Java</h3>
+              <span>Junho 2021 - No momento</span>
+            </div>
+
+            <div class="pt-10">
+              <p class="text-lg">
+                Trabalho na Zion logtec, onde tenho a oportunidade de participar
+                de projetos para diversos clientes. Nessa trajetória, trabalhei
+                em com criação de site, sistemas cloud e interfaces web com a
+                equipe de tecnologia da empresa. A Zion logtec é referência em
+                qualidade e inovação em suas soluções de logística, seja em
+                desenvolvimento, infraestrutura ou inovação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects section -->
-    <section>
-
+    <section id="exp-section" class="w-full h-screen bg-black text-white">
+      <div class="flex justify-center">
+        <h2
+          id="exp-title"
+          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+        >
+          SERVIÇOS
+        </h2>
+      </div>
+      <div class="mt-35 w-full h-96 flex items-center justify-center">
+        <ul id="services-list" class="w-full h-80 flex items-center">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </section>
 
     <!-- Social links section -->
-    <section>
-
-    </section>
+    <section></section>
 
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
