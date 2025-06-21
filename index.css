@@ -1,6 +1,8 @@
 :root {
   --bg-primary: #23044b;
   --bg-secondary: #8247ca;
+  --text-primary: #fff;
+  --text-secondary: #bbb;
 }
 
 body {
@@ -8,6 +10,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: "Open Sans";
 }
 
 #init-title {
@@ -97,10 +100,9 @@ body {
   max-width: 40px;
 }
 
-#tooling-items-list li h3 {
+#tooling-items-list li h5 {
   font-size: 18px;
   margin-left: 15px;
-  font-family: var(--font-sans);
   font-weight: 500;
 }
 
@@ -158,6 +160,122 @@ body {
 #exp-companies-div li.selected {
   border-left: var(--bg-secondary) 3px solid;
   padding-left: 15px;
+}
+
+#exp-description-div p {
+  color: var(--text-secondary);
+}
+
+#service-section {
+  background: #140738;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(8, 0, 36, 1) 0% rgba(20, 7, 56, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(8, 0, 36, 1) 0% rgba(20, 7, 56, 1) 100%
+  );
+  background: linear-gradient(0deg, #080024, rgba(20, 7, 56, 1) 0% 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140738", endColorstr="#080024", GradientType=0);
+}
+
+#service-title {
+  background-color: var(--bg-primary);
+  border: var(--bg-secondary) 2px dashed;
+}
+
+#services-list li {
+  width: 350px;
+  height: 100%;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 25px 10px;
+  background: #23044b;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(35, 4, 75, 1) 0%,
+    rgba(15, 1, 33, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(35, 4, 75, 1) 0%,
+    rgba(15, 1, 33, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(35, 4, 75, 1) 0%,
+    rgba(15, 1, 33, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23044B", endColorstr="#0F0121", GradientType=0);
+  box-shadow: 0px 10px 43px 11px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 10px 43px 11px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 43px 11px rgba(0, 0, 0, 0.2);
+  border: var(--bg-secondary) 0px solid;
+  transition: 500ms;
+}
+
+#services-list li:hover {
+  border: var(--bg-secondary) 1px solid;
+  transform: scale(1.05);
+  transition: 500ms;
+}
+
+#services-list li svg > path {
+  fill: var(--bg-secondary);
+}
+
+#services-list li > p {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  color: var(--text-secondary);
+}
+
+#contact-section {
+  background: #140738;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(8, 0, 36, 1) 0% rgba(20, 7, 56, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(8, 0, 36, 1) 0% rgba(20, 7, 56, 1) 100%
+  );
+  background: linear-gradient(0deg, #080024, rgba(20, 7, 56, 1) 0% 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140738", endColorstr="#080024", GradientType=0);
+}
+
+#contact-title {
+  background-color: var(--bg-primary);
+  border: var(--bg-secondary) 2px dashed;
+}
+
+#contact-list li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-list li > a > span {
+  height: 85px;
+  width: 85px;
+  margin: 0 40px;
+  background-color: var(--bg-secondary);
+  fill: var(--bg-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-list li > a > h6 {
+  margin-top: 20px;
 }
 
 .tooling-title-animation {
