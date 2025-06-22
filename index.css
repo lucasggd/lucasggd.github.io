@@ -13,18 +13,6 @@ body {
   font-family: "Open Sans";
 }
 
-#init-title {
-  animation: fade-in 2s, left-to-right 1s;
-}
-
-#init-desc {
-  animation: fade-in 4s, bottom-to-top 1s;
-}
-
-#init-me-picture {
-  animation: fade-in 2s, right-to-left 2s;
-}
-
 #main-section {
   background: #080024;
   background: -webkit-linear-gradient(
@@ -272,56 +260,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 500ms;
+}
+
+#contact-list li > a:hover > span {
+  transition: 500ms;
+  box-shadow: 0px 10px 43px 11px rgba(130, 71, 202, 0.3);
+  -webkit-box-shadow: 0px 10px 43px 11px rgba(130, 71, 202, 0.3);
+  -moz-box-shadow: 0px 10px 43px 11px rgba(130, 71, 202, 0.3);
 }
 
 #contact-list li > a > h6 {
   margin-top: 20px;
-}
-
-.tooling-title-animation {
-  animation: fade-in 3s;
-}
-
-.tooling-items-div-animation {
-  animation: fade-in 2s, right-to-left 1.5s;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes left-to-right {
-  0% {
-    transform: translateX(-100px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes bottom-to-top {
-  0% {
-    transform: translateY(100px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes right-to-left {
-  0% {
-    transform: translateX(700px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
 }
