@@ -207,7 +207,7 @@ body {
 
 #services-list li:hover {
   border: var(--bg-secondary) 1px solid;
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   transition: 500ms;
 }
 
