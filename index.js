@@ -2,6 +2,32 @@
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger, ScrollToPlugin, SplitText);
 
+const firstElem = document.querySelector(".snap");
+
+function goToSection(i, anim) {
+  gsap.to(window, {
+    scrollTo: { y: i * innerHeight + firstElem.offsetTop, autoKill: false },
+    duration: 1,
+  });
+
+  if (anim) {
+    anim.restart();
+  }
+}
+
+gsap.utils.toArray(".snap").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    onEnter: () => goToSection(i),
+  });
+
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "bottom bottom",
+    onEnterBack: () => goToSection(i),
+  });
+});
+
 // ===========================================================================================================================================
 // Start section
 
