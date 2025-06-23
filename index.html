@@ -17,10 +17,13 @@
     <!-- Welcome section -->
     <section
       id="main-section"
-      class="snap w-full h-screen bg-black flex justify-evenly items-center text-white"
+      class="snap w-full min-h-screen sm:h-screen bg-black flex flex-col-reverse sm:flex-row justify-center sm:justify-evenly items-center text-white"
     >
-      <div>
-        <h1 id="init-title" class="title-section text-6xl font-semibold">
+      <div class="m-5">
+        <h1
+          id="init-title"
+          class="title-section text-4xl 2xl:text-6xl font-semibold"
+        >
           Sou
           <span class="text-orange-600">Lucas Dias</span>
           ,
@@ -28,7 +31,7 @@
           um
           <span class="text-orange-600">desenvolvedor Full-Stack</span>.
         </h1>
-        <p id="init-desc" class="text-2xl">
+        <p id="init-desc" class="my-2 sm:my-0 text:lg 2xl:text-2xl">
           Crio experiências digitais rápidas, acessíveis e escaláveis.
         </p>
       </div>
@@ -36,7 +39,7 @@
       <div class="flex justify-start">
         <img
           id="init-me-picture"
-          class="w-[300px] h-auto rounded-full"
+          class="w-[200px] sm:w-[250px] 2xl:w-[300px] h-auto rounded-full"
           src="./images/me.jpeg"
           alt="Foto do desenvolvedor"
         />
@@ -46,23 +49,23 @@
     <!-- Tooling section -->
     <section
       id="tooling-section"
-      class="snap w-full h-screen bg-black text-white flex flex-col justify-center items-center"
+      class="snap w-full min-h-screen sm:h-screen bg-black text-white flex flex-col justify-center items-center"
     >
       <div class="flex justify-center">
         <h2
           id="tooling-title"
-          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+          class="text-3xl 2xl:text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
         >
           FERRAMENTAS
         </h2>
       </div>
       <div
         id="tooling-items-div"
-        class="mt-30 flex items-center justify-center"
+        class="mt-10 2xl:mt-30 flex items-center justify-center"
       >
         <ul
           id="tooling-items-list"
-          class="w-6/10 py-10 flex flex-wrap items-center justify-evenly rounded-xl"
+          class="w-9/10 sm:w-6/10 py-10 flex flex-wrap items-center justify-evenly rounded-xl"
         >
           <li>
             <img src="./images/angular.png" alt="angular-icon" />
@@ -111,36 +114,43 @@
     <!-- Experience section -->
     <section
       id="exp-section"
-      class="snap w-full h-screen bg-black text-white flex flex-col justify-center items-center"
+      class="snap w-full min-h-screen sm:h-screen bg-black text-white flex flex-col justify-center items-center pt-25 sm:pt-0"
     >
       <div class="flex justify-center">
         <h2
           id="exp-title"
-          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+          class="text-3xl 2xl:text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
         >
           EXPERIÊNCIA
         </h2>
       </div>
-      <div class="mt-30 w-full h-96 flex items-center justify-center">
-        <div id="exp-main-div" class="w-6/10 h-80 flex rounded-xl">
+      <div
+        class="mt-10 2xl:mt-30 w-full h-auto flex items-center justify-center"
+      >
+        <div
+          id="exp-main-div"
+          class="w-9/10 md:w-6/10 h-full xl:h-85 flex flex-col lg:flex-row rounded-xl"
+        >
           <ul
             id="exp-companies-div"
-            class="w-2/10 h-full border-r-2 border-purple-950 text-2xl font-semibold text-white py-4 rounded-l-xl"
+            class="w-full lg:w-2/10 h-full border-r-2 border-purple-950 text-xl 2xl:text-2xl font-semibold text-white py-4 rounded-l-xl"
           >
             <li class="py-3 selected">Zion Logtec</li>
           </ul>
 
           <div
             id="exp-description-div"
-            class="w-8/10 h-full flex flex-col px-10 text-white"
+            class="w-full lg:w-8/10 h-full flex flex-col px-4 lg:px-10 text-white"
           >
-            <div class="w-full py-6 flex justify-between">
-              <h3 class="text-3xl font-semibold">Desenvolvedor Web/Java</h3>
-              <span class="text-md">Junho 2021 - No momento</span>
+            <div class="w-full py-6 flex-col lg:flex-row justify-between">
+              <h3 class="text-2xl 2xl:text-3xl mb-2 lg:mb-0 font-semibold">
+                Desenvolvedor Web/Java
+              </h3>
+              <span class="text-sm 2xl:text-lg">Junho 2021 - No momento</span>
             </div>
 
-            <div class="pt-10">
-              <p class="text-xl">
+            <div class="pt-10 pb-5">
+              <p class="text-lg 2xl:text-xl text-justify lg:text-left">
                 Trabalho na Zion logtec, onde tenho a oportunidade de participar
                 de projetos para diversos clientes. Nessa trajetória, trabalhei
                 em com criação de site, sistemas cloud e interfaces web com a
@@ -157,24 +167,26 @@
     <!-- Projects section -->
     <section
       id="service-section"
-      class="snap w-full h-screen bg-black text-white flex flex-col justify-center items-center"
+      class="snap w-full min-h-screen md:h-screen bg-black text-white flex flex-col justify-center items-center pt-25 sm:pt-0"
     >
       <div class="flex justify-center">
         <h2
           id="service-title"
-          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+          class="text-3xl 2xl:text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
         >
           SERVIÇOS
         </h2>
       </div>
-      <div class="mt-30 w-full h-96 flex items-center justify-center">
+      <div
+        class="mt-10 2xl:mt-30 w-full h-auto lg:h-96 flex items-center justify-center"
+      >
         <ul
           id="services-list"
-          class="w-full h-85 flex items-center flex flex-wrap justify-center"
+          class="w-full h-auto flex items-center flex flex-wrap flex-col sm:flex-row justify-center"
         >
-          <li>
+          <li class="w-65 h-75 2xl:w-85">
             <svg
-              class="h-[70px] w-auto ml-3"
+              class="h-[60px] 2xl:h-[70px] w-auto ml-3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
             >
@@ -183,15 +195,17 @@
                 d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 224L64 288 64 64l448 0z"
               />
             </svg>
-            <h3 class="text-3xl font-semibold pt-10">UI/UX Design</h3>
-            <p>
+            <h3 class="text-xl 2xl:text-2xl font-semibold pt-10">
+              UI/UX Design
+            </h3>
+            <p class="text-md 2xl:text-xl">
               Desenho interface no Figma de forma que ela seja clara, objetiva e
               principalmente intuitiva para a experiência do usuário.
             </p>
           </li>
-          <li>
+          <li class="w-65 h-75 2xl:w-85">
             <svg
-              class="h-[70px] w-auto ml-3"
+              class="h-[60px] 2xl:h-[70px] w-auto ml-3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 640 512"
             >
@@ -200,15 +214,17 @@
                 d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
               />
             </svg>
-            <h3 class="text-3xl font-semibold pt-10">Desenvolvimento</h3>
-            <p>
+            <h3 class="text-xl 2xl:text-2xl font-semibold pt-10">
+              Desenvolvimento
+            </h3>
+            <p class="text-md 2xl:text-xl">
               Desenvolvo front-end de sites profissionais, blogs, SaaS, landing
               pages, ecommerce e entre outros websites.
             </p>
           </li>
-          <li>
+          <li class="w-65 h-75 2xl:w-85">
             <svg
-              class="h-[70px] w-auto ml-3"
+              class="h-[60px] 2xl:h-[70px] w-auto ml-3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -217,8 +233,8 @@
                 d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z"
               />
             </svg>
-            <h3 class="text-3xl font-semibold pt-10">Motion</h3>
-            <p>
+            <h3 class="text-xl 2xl:text-2xl font-semibold pt-10">Motion</h3>
+            <p class="text-md 2xl:text-xl">
               Crio interações entre elementos que transmitem sensação de
               modernidade, além de chamarem a atenção do usuário.
             </p>
@@ -230,24 +246,27 @@
     <!-- Social links section -->
     <section
       id="contact-section"
-      class="snap w-full h-screen bg-black text-white flex flex-col justify-center items-center relative"
+      class="snap w-full min-h-screen sm:h-screen bg-black text-white flex flex-col justify-center items-center relative"
     >
       <div class="flex justify-center">
         <h2
           id="contact-title"
-          class="text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
+          class="text-3xl 2xl:text-4xl font-semibold text-white py-3 px-8 rounded-md font-mono"
         >
           CONTATO
         </h2>
       </div>
 
       <div>
-        <ul id="contact-list" class="mt-30 w-auto h-auto flex">
+        <ul
+          id="contact-list"
+          class="mt-10 2xl:mt-30 w-auto h-auto flex justify-center flex-wrap"
+        >
           <li>
             <a>
-              <span>
+              <span class="w-17 2xl:w-21 h-17 2xl:h-21">
                 <svg
-                  class="w-6/10"
+                  class="h-5/10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -257,17 +276,17 @@
                   />
                 </svg>
               </span>
-              <h6 class="contact-text text-xl font-bold text-white">E-MAIL</h6>
-              <p class="contact-text text-sm font-bold mt-2 text-gray-400">
+              <h6 class="text-lg 2xl:text-xl font-bold text-white">E-MAIL</h6>
+              <p class="text-sm 2xl:text-sm font-bold mt-2 text-gray-400">
                 ld.ggd@outlook.com
               </p>
             </a>
           </li>
           <li>
             <a>
-              <span>
+              <span class="w-17 2xl:w-21 h-17 2xl:h-21">
                 <svg
-                  class="h-6/10"
+                  class="h-5/10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 384 512"
                 >
@@ -277,19 +296,17 @@
                   />
                 </svg>
               </span>
-              <h6 class="contact-text text-xl font-bold text-white">
-                Telefone
-              </h6>
-              <p class="contact-text text-sm font-bold mt-2 text-gray-400">
+              <h6 class="text-lg 2xl:text-xl font-bold text-white">Telefone</h6>
+              <p class="text-sm 2xl:text-sm font-bold mt-2 text-gray-400">
                 (14) 99731-8619
               </p>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/lucas-gabriel-dias-42007a1a3/">
-              <span>
+              <span class="w-17 2xl:w-21 h-17 2xl:h-21">
                 <svg
-                  class="h-6/10"
+                  class="h-5/10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
                 >
@@ -299,19 +316,17 @@
                   />
                 </svg>
               </span>
-              <h6 class="contact-text text-xl font-bold text-white">
-                Linkedin
-              </h6>
-              <p class="contact-text text-sm font-bold mt-2 text-gray-400">
+              <h6 class="text-lg 2xl:text-xl font-bold text-white">Linkedin</h6>
+              <p class="text-sm 2xl:text-sm font-bold mt-2 text-gray-400">
                 Lucas Gabriel Dias
               </p>
             </a>
           </li>
           <li>
             <a href="https://github.com/lucasggd">
-              <span>
+              <span class="w-17 2xl:w-21 h-17 2xl:h-21">
                 <svg
-                  class="h-6/10"
+                  class="h-5/10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 496 512"
                 >
@@ -321,8 +336,8 @@
                   />
                 </svg>
               </span>
-              <h6 class="contact-text text-xl font-bold text-white">Github</h6>
-              <p class="contact-text text-sm font-bold mt-2 text-gray-400">
+              <h6 class="text-lg 2xl:text-xl font-bold text-white">Github</h6>
+              <p class="text-sm 2xl:text-sm font-bold mt-2 text-gray-400">
                 @lucasggd
               </p>
             </a>

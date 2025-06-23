@@ -73,6 +73,8 @@ body {
   align-items: center;
   border-radius: 6%;
   transition: 700ms;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #tooling-items-list li:hover {
@@ -89,9 +91,7 @@ body {
 }
 
 #tooling-items-list li h5 {
-  font-size: 18px;
   margin-left: 15px;
-  font-weight: 500;
 }
 
 #exp-section {
@@ -118,7 +118,6 @@ body {
 }
 
 #exp-companies-div {
-  border-right: var(--bg-secondary) 1px dashed;
   background: #0f0121;
   background: -webkit-linear-gradient(
     90deg,
@@ -174,8 +173,6 @@ body {
 }
 
 #services-list li {
-  width: 350px;
-  height: 100%;
   margin: 12px;
   display: flex;
   flex-direction: column;
@@ -216,7 +213,6 @@ body {
 }
 
 #services-list li > p {
-  font-size: 20px;
   height: 100%;
   width: 100%;
   padding-top: 30px;
@@ -243,6 +239,10 @@ body {
 }
 
 #contact-list li > a {
+  margin: 20px 0;
+}
+
+#contact-list li > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -251,8 +251,6 @@ body {
 }
 
 #contact-list li > a > span {
-  height: 85px;
-  width: 85px;
   margin: 0 40px;
   background-color: var(--bg-secondary);
   fill: var(--bg-primary);
@@ -272,4 +270,34 @@ body {
 
 #contact-list li > a > h6 {
   margin-top: 20px;
+}
+
+@media (max-width: 450px) {
+  #tooling-items-list li {
+    width: 90%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 849px) {
+  #tooling-items-list li {
+    width: 45%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1281px) {
+  #tooling-items-list li {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1282px) and (max-width: 1441px) {
+  #tooling-items-list li {
+    width: 30%;
+  }
 }
