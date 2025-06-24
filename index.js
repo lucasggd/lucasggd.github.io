@@ -6,7 +6,7 @@ const firstElem = document.querySelector(".snap");
 let isScrolling = false;
 
 function goToSection(i, anim) {
-  if (isScrolling) return;
+  if (isScrolling || window.innerWidth <= 700) return;
 
   isScrolling = true;
   gsap.to(window, {
